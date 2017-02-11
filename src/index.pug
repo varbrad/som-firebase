@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="theme-color" value="#ff0000")
+    title Student Online Messenger
+  body
+    #app
+      #message
+        h1 Student Online Messenger
+        hr
+        p.message(v-for="msg in messages")
+          span.name {{ msg.name }}
+          |{{ msg.message }}
+          span.timestamp {{ toDate(msg.timestamp) }}
+        hr
+        .input-group
+          input(type="text" v-model="txtName" @keypress.enter="postMessage" placeholder="Name")
+          input(type="text" v-model="txtMessage" @keypress.enter="postMessage" placeholder="Message")
+          button(@click="postMessage") Post Message
