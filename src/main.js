@@ -21,7 +21,7 @@ const vm = new Vue({
       this.messages = snapshot.val()
     },
     toDate: function (timestamp) {
-      return moment(timestamp).format('HH:mm - d MMM \'YY')
+      return moment(timestamp).format('HH:mm - Do MMM \'YY')
     }
   },
   mounted: function () {
