@@ -1,8 +1,8 @@
 {
   "name": "som-firebase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Brad Davies",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
     "bundle": "npm run lint && webpack -p",
     "dev": "webpack-dev-server",
